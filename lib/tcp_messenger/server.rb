@@ -5,7 +5,7 @@ module TCPMessenger
       @tcp_server = tcp_server
       @duck_types = duck_types
       @max_message_length = max_message_length
-      @close_mutex = QuackConcurrency::ReentrantMutex.new(duck_types: duck_types)
+      @close_mutex = QuackConcurrency::ReentrantMutex.new
       @accept_mutex = Mutex.new
       @closed = false
     end

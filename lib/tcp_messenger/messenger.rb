@@ -4,7 +4,7 @@ module TCPMessenger
     def initialize(socket, duck_types: , max_message_length: )
       @socket = socket
       @max_message_length = max_message_length
-      @close_mutex = QuackConcurrency::ReentrantMutex.new(duck_types: duck_types)
+      @close_mutex = QuackConcurrency::ReentrantMutex.new
       @send_mutex = Mutex.new
       @receive_mutex = Mutex.new
       @closed = false

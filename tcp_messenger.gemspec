@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'tcp_messenger'
-  s.version     = '0.0.1'
-  s.date        = '2018-02-25'
+  s.version     = '0.0.2'
+  s.date        = '2018-12-17'
   s.summary     = "Send messages over TCP connection."
   s.description = "Simple library to open/accept TCP connections and send/receive messages of strings over the connection."
   s.authors     = ["Rob Fors"]
